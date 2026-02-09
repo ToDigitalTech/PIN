@@ -1,0 +1,978 @@
+/**
+ * PIN Platform - Public Styles
+ * Mobile-first, professional design.
+ */
+
+/* ============================================
+   CSS Variables
+   ============================================ */
+:root {
+    --pin-primary: #2C5F2D;
+    --pin-primary-dark: #1e4620;
+    --pin-secondary: #1E3A8A;
+    --pin-accent: #F59E0B;
+    --pin-accent-dark: #D97706;
+    --pin-bg: #F9FAFB;
+    --pin-bg-white: #FFFFFF;
+    --pin-text: #111827;
+    --pin-text-light: #6B7280;
+    --pin-text-muted: #9CA3AF;
+    --pin-border: #E5E7EB;
+    --pin-success: #059669;
+    --pin-warning: #D97706;
+    --pin-error: #DC2626;
+    --pin-radius: 8px;
+    --pin-radius-lg: 12px;
+    --pin-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --pin-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --pin-max-width: 1200px;
+}
+
+/* ============================================
+   Base
+   ============================================ */
+.pin-landing,
+.pin-dashboard,
+.pin-registration,
+.pin-transparency {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--pin-text);
+    line-height: 1.6;
+    max-width: var(--pin-max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.pin-landing *,
+.pin-dashboard *,
+.pin-registration *,
+.pin-transparency * {
+    box-sizing: border-box;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.pin-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: var(--pin-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+}
+
+.pin-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--pin-shadow-lg);
+}
+
+.pin-btn-primary {
+    background: var(--pin-primary);
+    color: #fff;
+}
+
+.pin-btn-primary:hover {
+    background: var(--pin-primary-dark);
+    color: #fff;
+}
+
+.pin-btn-secondary {
+    background: var(--pin-secondary);
+    color: #fff;
+}
+
+.pin-btn-secondary:hover {
+    background: #152e6e;
+    color: #fff;
+}
+
+.pin-btn-accent {
+    background: var(--pin-accent);
+    color: var(--pin-text);
+}
+
+.pin-btn-accent:hover {
+    background: var(--pin-accent-dark);
+}
+
+.pin-btn-outline {
+    background: transparent;
+    border-color: var(--pin-primary);
+    color: var(--pin-primary);
+}
+
+.pin-btn-outline:hover {
+    background: var(--pin-primary);
+    color: #fff;
+}
+
+.pin-btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+}
+
+.pin-btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.pin-btn-full {
+    width: 100%;
+    display: block;
+}
+
+.pin-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ============================================
+   Landing Page
+   ============================================ */
+.pin-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, var(--pin-primary) 0%, var(--pin-secondary) 100%);
+    color: #fff;
+    border-radius: var(--pin-radius-lg);
+    margin: 1rem 0 2rem;
+}
+
+.pin-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.pin-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0.95;
+    margin-bottom: 0.5rem;
+}
+
+.pin-hero-desc {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.pin-hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.pin-hero-ctas .pin-btn {
+    min-width: 160px;
+}
+
+/* How It Works */
+.pin-section {
+    padding: 2rem 0;
+}
+
+.pin-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--pin-text);
+}
+
+.pin-how-it-works {
+    background: var(--pin-bg-white);
+    border-radius: var(--pin-radius-lg);
+    padding: 2rem 1rem;
+    box-shadow: var(--pin-shadow);
+}
+
+.pin-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pin-step {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.pin-step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--pin-primary);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.pin-step h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.pin-step p {
+    color: var(--pin-text-light);
+    font-size: 0.95rem;
+}
+
+/* Stats Grid */
+.pin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.pin-stats-large .pin-stat-item {
+    padding: 1.5rem;
+}
+
+.pin-stat-item {
+    background: var(--pin-bg-white);
+    border-radius: var(--pin-radius);
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--pin-shadow);
+    border: 1px solid var(--pin-border);
+}
+
+.pin-stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--pin-primary);
+    margin-bottom: 0.25rem;
+}
+
+.pin-stat-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--pin-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+/* Payment Flow */
+.pin-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: var(--pin-bg-white);
+    border-radius: var(--pin-radius-lg);
+    box-shadow: var(--pin-shadow);
+}
+
+.pin-flow-item {
+    text-align: center;
+    padding: 1rem;
+    background: var(--pin-bg);
+    border-radius: var(--pin-radius);
+    width: 100%;
+    max-width: 250px;
+}
+
+.pin-flow-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.pin-flow-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.pin-flow-item span {
+    color: var(--pin-text-light);
+    font-size: 0.95rem;
+}
+
+.pin-flow-arrow {
+    font-size: 1.5rem;
+    color: var(--pin-primary);
+    transform: rotate(90deg);
+}
+
+/* ============================================
+   Forms
+   ============================================ */
+.pin-form-container {
+    max-width: 640px;
+    margin: 2rem auto;
+    background: var(--pin-bg-white);
+    border-radius: var(--pin-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--pin-shadow-lg);
+}
+
+.pin-form-container h2 {
+    margin-bottom: 0.5rem;
+    color: var(--pin-primary);
+}
+
+.pin-form-desc {
+    color: var(--pin-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.pin-form h3 {
+    margin: 1.5rem 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--pin-border);
+    color: var(--pin-secondary);
+    font-size: 1rem;
+}
+
+.pin-form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.pin-form-group {
+    margin-bottom: 1rem;
+}
+
+.pin-form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.35rem;
+    color: var(--pin-text);
+}
+
+.pin-form-group label .required {
+    color: var(--pin-error);
+}
+
+.pin-form-group input,
+.pin-form-group select,
+.pin-form-group textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    background: var(--pin-bg-white);
+    color: var(--pin-text);
+}
+
+.pin-form-group input:focus,
+.pin-form-group select:focus,
+.pin-form-group textarea:focus {
+    outline: none;
+    border-color: var(--pin-primary);
+    box-shadow: 0 0 0 3px rgba(44, 95, 45, 0.1);
+}
+
+.pin-form-hint {
+    font-size: 0.8rem;
+    color: var(--pin-text-muted);
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.pin-form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.pin-form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--pin-text-light);
+}
+
+.pin-form-footer a {
+    color: var(--pin-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pin-form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   Notices
+   ============================================ */
+.pin-notice {
+    padding: 0.75rem 1rem;
+    border-radius: var(--pin-radius);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    border-left: 4px solid;
+}
+
+.pin-notice-info {
+    background: #EFF6FF;
+    border-color: var(--pin-secondary);
+    color: #1E40AF;
+}
+
+.pin-notice-warning {
+    background: #FFFBEB;
+    border-color: var(--pin-accent);
+    color: #92400E;
+}
+
+.pin-notice-error {
+    background: #FEF2F2;
+    border-color: var(--pin-error);
+    color: #991B1B;
+}
+
+.pin-notice-success {
+    background: #F0FDF4;
+    border-color: var(--pin-success);
+    color: #065F46;
+}
+
+.pin-notice a {
+    font-weight: 600;
+    color: inherit;
+}
+
+/* ============================================
+   Dashboard
+   ============================================ */
+.pin-dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--pin-border);
+}
+
+.pin-dash-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: var(--pin-primary);
+}
+
+.pin-dash-company {
+    color: var(--pin-text-light);
+    font-size: 0.95rem;
+}
+
+.pin-dash-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pin-dash-stat-card {
+    background: var(--pin-bg-white);
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius);
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--pin-shadow);
+}
+
+.pin-dash-stat-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--pin-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.35rem;
+}
+
+.pin-dash-stat-value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--pin-primary);
+}
+
+.pin-stat-highlight {
+    background: linear-gradient(135deg, var(--pin-primary) 0%, var(--pin-secondary) 100%);
+    border: none;
+}
+
+.pin-stat-highlight .pin-dash-stat-label,
+.pin-stat-highlight .pin-dash-stat-value {
+    color: #fff;
+}
+
+/* Info bar */
+.pin-info-bar {
+    background: var(--pin-bg);
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   Tabs
+   ============================================ */
+.pin-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--pin-border);
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+.pin-tab {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--pin-text-light);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.pin-tab:hover {
+    color: var(--pin-primary);
+}
+
+.pin-tab.active {
+    color: var(--pin-primary);
+    border-bottom-color: var(--pin-primary);
+}
+
+.pin-tab-content {
+    display: none;
+}
+
+.pin-tab-content.active {
+    display: block;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+.pin-table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.pin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.pin-table thead th {
+    background: var(--pin-bg);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--pin-text-light);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+    border-bottom: 2px solid var(--pin-border);
+    white-space: nowrap;
+}
+
+.pin-table tbody td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--pin-border);
+    vertical-align: middle;
+}
+
+.pin-table tbody tr:hover {
+    background: var(--pin-bg);
+}
+
+/* ============================================
+   Badges
+   ============================================ */
+.pin-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.pin-badge-active,
+.pin-badge-completed,
+.pin-badge-verified,
+.pin-badge-sent,
+.pin-badge-confirmed {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.pin-badge-pending,
+.pin-badge-processing {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.pin-badge-inactive,
+.pin-badge-cancelled {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+/* ============================================
+   Salary Breakdown Visual
+   ============================================ */
+.pin-salary-breakdown {
+    margin-bottom: 1.5rem;
+}
+
+.pin-breakdown-visual {
+    margin-bottom: 1.5rem;
+}
+
+.pin-breakdown-bar {
+    display: flex;
+    border-radius: var(--pin-radius);
+    overflow: hidden;
+    height: 48px;
+    box-shadow: var(--pin-shadow);
+}
+
+.pin-breakdown-net {
+    background: var(--pin-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.pin-breakdown-tax {
+    background: var(--pin-accent);
+    color: var(--pin-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Tax Impact Card */
+.pin-impact-card {
+    background: var(--pin-bg);
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.pin-impact-card p {
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================
+   Transparency
+   ============================================ */
+.pin-transparency-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.pin-transparency-header h1 {
+    font-size: 1.75rem;
+    color: var(--pin-primary);
+}
+
+.pin-transparency-header p {
+    color: var(--pin-text-light);
+}
+
+.pin-pool-card {
+    background: linear-gradient(135deg, var(--pin-primary) 0%, var(--pin-secondary) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: var(--pin-radius-lg);
+    box-shadow: var(--pin-shadow-lg);
+}
+
+.pin-pool-card h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.pin-pool-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.pin-pool-card p {
+    opacity: 0.9;
+}
+
+/* Distribution Feed */
+.pin-feed {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pin-feed-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--pin-border);
+}
+
+.pin-feed-dot {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border-radius: 50%;
+    background: var(--pin-primary);
+    margin-top: 0.35rem;
+}
+
+.pin-feed-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.pin-feed-date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--pin-text-muted);
+    margin-top: 0.25rem;
+}
+
+/* ============================================
+   Payroll Preview
+   ============================================ */
+.pin-payroll-preview {
+    background: var(--pin-bg);
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius-lg);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.pin-payroll-preview h3 {
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+.pin-summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pin-summary-item {
+    padding: 0.75rem;
+    background: var(--pin-bg-white);
+    border-radius: var(--pin-radius);
+    border: 1px solid var(--pin-border);
+}
+
+.pin-summary-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--pin-text-light);
+    margin-bottom: 0.25rem;
+}
+
+.pin-summary-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--pin-primary);
+}
+
+.pin-summary-total {
+    grid-column: 1 / -1;
+    background: var(--pin-primary);
+    border-color: var(--pin-primary);
+}
+
+.pin-summary-total .pin-summary-label,
+.pin-summary-total .pin-summary-value {
+    color: #fff;
+}
+
+/* ============================================
+   Section Header
+   ============================================ */
+.pin-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pin-section-header h2 {
+    text-align: left;
+    margin: 0;
+}
+
+/* Add Worker Form */
+.pin-add-worker-form {
+    background: var(--pin-bg);
+    border: 1px solid var(--pin-border);
+    border-radius: var(--pin-radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pin-add-worker-form h3 {
+    margin-top: 0;
+}
+
+/* AJAX Result */
+.pin-ajax-result {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.pin-ajax-result.success {
+    color: var(--pin-success);
+}
+
+.pin-ajax-result.error {
+    color: var(--pin-error);
+}
+
+/* ============================================
+   Utility
+   ============================================ */
+.pin-text-center {
+    text-align: center;
+}
+
+.pin-text-green {
+    color: var(--pin-success) !important;
+}
+
+.pin-text-amber {
+    color: var(--pin-accent-dark) !important;
+}
+
+.pin-text-muted {
+    color: var(--pin-text-muted);
+}
+
+/* Loading spinner */
+.pin-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--pin-border);
+    border-top-color: var(--pin-primary);
+    border-radius: 50%;
+    animation: pin-spin 0.6s linear infinite;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+@keyframes pin-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   Responsive: Tablet
+   ============================================ */
+@media (min-width: 640px) {
+    .pin-form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pin-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pin-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pin-dash-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pin-flow {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pin-flow-arrow {
+        transform: none;
+    }
+
+    .pin-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ============================================
+   Responsive: Desktop
+   ============================================ */
+@media (min-width: 1024px) {
+    .pin-hero {
+        padding: 4rem 2rem;
+    }
+
+    .pin-hero h1 {
+        font-size: 3rem;
+    }
+
+    .pin-form-container {
+        padding: 2.5rem;
+    }
+
+    .pin-stat-value {
+        font-size: 2rem;
+    }
+
+    .pin-pool-amount {
+        font-size: 3rem;
+    }
+}
+
+/* ============================================
+   Print
+   ============================================ */
+@media print {
+    .pin-btn,
+    .pin-tabs,
+    .pin-form-actions,
+    .pin-dash-actions {
+        display: none !important;
+    }
+
+    .pin-tab-content {
+        display: block !important;
+    }
+}
